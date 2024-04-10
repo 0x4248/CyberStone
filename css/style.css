@@ -22,6 +22,15 @@ body {
   font-size: 17px;
 }
 
+.topnav img {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+
+}
 .active {
   background-color: rgb(46, 107, 172);
   color: white;
@@ -112,20 +121,149 @@ body {
   }
 }
 
-.column1{
-  float: left;
-  width: 75%;
-  background-color: #1b1b1b;
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.column2{
-  float: left;
-  width: 25%;
-  background-color: #3c3c3c;
+.column{
+	background-color: #313131d3;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	width: 45%;
 }
 
-.row:after{
-  content:"";
-  display: table;
-  clear: both;
+.column-no-style{
+	padding: 10px;
+	margin: 5px;
+	width: 45%;
+}
+
+.column-no-style img{
+	width: 100%;
+	border-radius: 20px;
+	max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+	.column{
+		width: 100%;
+	}
+	.column-no-style {
+		width: 100%;
+	}
+	
+}
+
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background-color: #333;
+	color: white;
+	padding: 8px;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+.main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+	.main{
+		width: 100%;
+	}
+	
+	.column-no-style {
+		width: 100%;
+	}
+	.column {
+		width: 100%;
+	}
+	.column-no-style img{
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+
+
+@media screen and (min-width: 1500px) {
+	.main {
+		width: 80%;
+	}
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	background-color: #313131d3;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	width: 28%;
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		width: 100%;
+	}
+	
+}
+
+button {
+	background-color: #525151;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.footer {
+	background-color: #131313d3;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.footer-content a {
+	color: white;
+	text-decoration: none;
+	background-color: #202020;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	.footer-content {
+		width: 90%;
+	}
+	
+}
+
+@media screen and (min-width: 1500px) {
+	.footer-content {
+		width: 30%;
+	}
+	
 }
