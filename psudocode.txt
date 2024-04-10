@@ -1,0 +1,13 @@
+START
+	WHILE (true) {
+		IF (submitbutton.clicked()){}
+			IF ("@" IN emailfeild) {
+				get_data_from_form();
+				Convert_to_JSON();
+				Send_to_server();
+			} ELSE {
+				alert("Invalid Email Address");
+			}
+		}
+	}
+END
