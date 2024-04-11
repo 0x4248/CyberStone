@@ -3,7 +3,7 @@
  * This javascript file is used to make the topnav responsive 
 */
 
-function myFunction() {
+function topnav_click() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
