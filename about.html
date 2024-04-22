@@ -22,30 +22,51 @@
 
 
 <body>
+	<!-- SKIP TO MAIN CONTENT BUTTON -->
+	<a href="#maincontent" class="skip-link">Skip to main content</a>
 	<!--NAVIGATION BAR-->
 	<div class="topnav" id="myTopnav">
+		<img src="imgs/cyberstonelogo3.png" alt="Cyberstone logo" style="width: 40px; padding-top: 5px; margin-right: 10px;padding-left:10px;">
 		<a href="index.html">Home</a>
 		<a href="about.html" class="active">About</a>
-		<a href="products.html" >Products</a>
-		<div class="dropdown">
-			<button class="dropbtn">Profiles
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
+		<a href="products.html">Products</a>
+		<a href="pricing.html">Pricing</a>
+		<a href="contact.html">Contact</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topnav_click()">&#9776;</a>
+	</div>
+	<div class="main">
+		<br style="margin: 20px;">
+		<div class="flex-container" id="maincontent">
+			<div class="column-no-style">
+				<h1>About us</h1>
+				<p>We are a cybersecurity company that ensures your company is protected from cyber threats and attacks. Our team of experts will help you to protect your data and your company.</p>
+			</div>
+			<div class="column-no-style">
+				<img src="imgs/cybersecurity4.jpg" alt="Robot cybersecurity" style="width: 90%; float: right;">
 			</div>
 		</div>
-		<a href="#about">Contact</a>
-		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
-	<div class="row">
-		<div class="column1">
-			<p>Test Text</p>
+	<br style="margin: 20px;">
+	<!--FOOTER-->
+	<div class="footer">
+		<div class="footer-logo">
+			<img src="imgs/cyberstonelogo3.png" alt="Cyberstone logo" style="width: 40px;">
+			<p style="display: inline;font-size: xx-large;">CYBERSTONE</p>
 		</div>
-		<div class="column2">
-			<p>Test Text</p>
+		<br style="margin: 10px;">
+		<div class="footer-content">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="products.html">Products</a>
+			<a href="pricing.html">Pricing</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<br style="margin: 2px;">
+		<div class="footer-content">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
 		</div>
 	</div>
 </body>
