@@ -20,16 +20,19 @@
 	<script src="js/topnav.js" async></script>
 	<script>
 		function submit() {
+			// Get all the values from the form
 			let first_name = document.getElementById("first_name").value;
 			let last_name = document.getElementById("last_name").value;
 			let email = document.getElementById("email").value;
 			let subject = document.getElementById("subject").value;
 			let message = document.getElementById("message").value;
 
+			// Check if the email is valid
 			if (!email.includes("@")) {
 				alert("Invalid Email Address")
 			}
 
+			// Create a JSON object with the data
 			let data = {
 				"first_name": first_name,
 				"last_name": last_name,
@@ -38,6 +41,7 @@
 				"message": message
 			}
 
+			// Send the data to the server
 			fetch("/send_contact", {
 				method: "POST",
 				body: JSON.stringify(data)
@@ -113,7 +117,9 @@
 
 	<h1>Contact us</h1>
 	<p>Get in touch with us to find out more about our services and how we can help you.</p>
+	<!-- Main content -->
 	<div class="contact" id="maincontent">
+		<!-- Form elements -->
 		<label for="first_name">First Name</label>
 		<input type="text" id="first_name" name="firstname" placeholder="Your name..">
 		<label for="last_name">Last Name</label>

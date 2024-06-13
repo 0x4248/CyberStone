@@ -1,127 +1,149 @@
 /*BODY STYLE*/
 body {
-    margin:0;
-    font-family:Arial;
-    background-color: #191919;
-    color: white;
+	/* Remove margin on body element */
+	margin: 0;
+	/* Set website font to Arial */
+	font-family: Arial;
+	background-color: #191919;
+	color: white;
 }
 
 /*NAV STYLE*/
 .topnav {
-  overflow: hidden;
-  background-color: #333333d3;
+	/* Hide any scroll bars */
+	overflow: hidden;
+	background-color: #333333d3;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	/* Remove underlining */
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav img {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
 }
+
 .active {
-  background-color: rgb(46, 107, 172);
-  color: white;
-  border-radius: 10px;
+	/* Show which page is currently active */
+	background-color: rgb(46, 107, 172);
+	color: white;
+	border-radius: 10px;
 }
 
 .topnav .icon {
-  display: none;
+	/* set the icon to display none when on desktop */
+	display: none;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+	float: left;
+	overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #3b3b3b;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #3b3b3b;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+	float: none;
+	color: rgb(255, 255, 255);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #1f1f1f;
-  color: white;
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #1f1f1f;
+	color: white;
 }
 
 .dropdown-content a:hover {
-  background-color: #242424;
-  color: rgb(255, 255, 255);
+	background-color: #242424;
+	color: rgb(255, 255, 255);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
 
 /*RESPONSIVE STYLE*/
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+
+	.topnav a:not(:first-child),
+	.dropdown .dropbtn {
+		display: none;
+	}
+
+	.topnav a.icon {
+		/* show the icon when on mobile */
+		float: right;
+		display: block;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.topnav.responsive .dropdown {
+		float: none;
+	}
+
+	.topnav.responsive .dropdown-content {
+		position: relative;
+	}
+
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
 }
 
-.flex-container{
+.flex-container {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -129,7 +151,7 @@ body {
 	margin-right: 10px;
 }
 
-.column{
+.column {
 	background-color: #313131d3;
 	border-radius: 10px;
 	padding: 10px;
@@ -145,30 +167,31 @@ body {
 }
 
 
-.column-no-style{
+.column-no-style {
 	padding: 10px;
 	margin: 5px;
 	width: 45%;
 }
 
-.column-partner{
+.column-partner {
 	padding: 10px;
 }
 
-.column-no-style img{
+.column-no-style img {
 	width: 100%;
 	border-radius: 20px;
 	max-width: 500px;
 }
 
 @media screen and (max-width: 600px) {
-	.column{
+	.column {
 		width: 100%;
 	}
+
 	.column-no-style {
 		width: 100%;
 	}
-	
+
 }
 
 .skip-link {
@@ -185,23 +208,25 @@ body {
 	top: 0;
 }
 
-.main{
+.main {
 	width: 90%;
 	margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
-	.main{
+	.main {
 		width: 100%;
 	}
-	
+
 	.column-no-style {
 		width: 100%;
 	}
+
 	.column {
 		width: 100%;
 	}
-	.column-no-style img{
+
+	.column-no-style img {
 		margin: 0 auto;
 		float: none;
 	}
@@ -221,12 +246,14 @@ body {
 }
 
 .cards {
+	/* Cards container */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .card {
+	/* card element */
 	background-color: #313131d3;
 	border-radius: 10px;
 	padding: 10px;
@@ -236,9 +263,11 @@ body {
 
 @media screen and (max-width: 600px) {
 	.card {
+		/* set the card to the full display 
+		   width so it can be read on mobile */
 		width: 100%;
 	}
-	
+
 }
 
 button {
@@ -248,17 +277,17 @@ button {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-
 }
 
 .footer {
+	/* bottom footer container */
 	background-color: #131313d3;
 	color: white;
 	text-align: center;
 	padding: 10px;
 }
 
-.footer-content{
+.footer-content {
 	display: flex;
 	justify-content: space-between;
 	width: 40%;
@@ -275,15 +304,16 @@ button {
 
 @media screen and (max-width: 600px) {
 	.footer-content {
+		/* This makes the footer bigger on mobile to prevent squashing */
 		width: 90%;
 	}
-	
+
 }
 
 @media screen and (min-width: 1500px) {
 	.footer-content {
+		/* This makes the footer smaller on desktop */
 		width: 30%;
 	}
-	
-}
 
+}
